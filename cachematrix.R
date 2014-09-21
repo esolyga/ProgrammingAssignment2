@@ -7,7 +7,12 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-	inv <- NULL	#erasing inverse while making new cache matrix
+	inv <- NULL	# erasing inverse while making new cache matrix
+##
+## variables x and inv are stored in the envirement
+## of function makeCacheMatrix and they can be accessed by
+## following functions:
+##
         set <- function(y)	# function for altering the matrix
 	{
                 x <<- y		# assigning new matrix
